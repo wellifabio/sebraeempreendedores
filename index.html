@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pequenos Empreendimentos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pequenos Empreendimentos</h1>
+        <h2>Estimativas de despesas</h2>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Nome do empreendimento:</label>
+            <input type="text" id="nome" required>
+            <label for="aluguel">Aluguel:</label>
+            <input type="number" id="aluguel" required>
+            <label for="agua">Água:</label>
+            <input type="number" id="agua" required>
+            <label for="luz">Luz:</label>
+            <input type="number" id="luz" required>
+            <label for="folhaPagamento">Folha de Pagamento:</label>
+            <input type="number" id="folhaPagamento" required>
+            <label for="outras">Outras despesas:</label>
+            <input type="number" id="outras" required>
+        </form>
+        <button
+            onclick="calcular()">Calcular</button>
+    </main>
+    <footer>
+        <div id="total">Total R$</div>
+        <div id="media">Média R$</div>
+        <div id="estimativa">Estimativa anual R$</div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
